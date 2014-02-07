@@ -7,6 +7,14 @@
  * URL: http://blacktie.co
  */
 
+/* My Custom Styles */
+.responsiveMenu{
+	display: none;
+}
+
+
+
+
 body {
   background-color: #f2f2f2;
     font-family: "Lato";
@@ -39,7 +47,6 @@ p {
 /* Links */
 a {
     color: #f85c37;
-    word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
