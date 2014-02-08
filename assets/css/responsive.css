@@ -38,14 +38,13 @@ Things to remember:
 	  position: fixed;
 	  background-color: #383942;
 	  display: inline-block;
-	
+	  opacity: .5;
 	}
 
 	.nav > li > a {
 	  position: relative;
 	  display: block;
-	  /* padding: 10px 15px; */
-	  color: darkgrey;
+	  color: white;
 	  text-align: center;
 	}
 

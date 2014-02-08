@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <meta name="author" content="John D. Storey">
+    <link rel="shortcut icon" href="favicon.ico">
 
     <title>Private XO Island Crowdfund Campaign</title>
 
@@ -41,17 +41,15 @@
 	<!-- Mobile Menu -->
 	<nav class="menu" id="theMenu">
 		<div class="menu-wrap">
-			<h1 class="logo"><a href="index.html#home">Onassis</a></h1>
+			<h1 class="logo"><a href="index.html#home">XO Island</a></h1>
 			<i class="icon-remove menu-close"></i>
 			<a href="#home" class="smoothScroll">Home</a>
-			<a href="#services" class="smoothScroll">Services</a>
-			<a href="#portfolio" class="smoothScroll">Portfolio</a>
-			<a href="#about" class="smoothScroll">About</a>
+			<a href="#services" class="smoothScroll">About</a>
+			<a href="#portfolio" class="smoothScroll">Packages</a>
+			<a href="#about" class="smoothScroll">FAQ</a>
+			<a href="#members" class="smoothScroll">Members</a>
 			<a href="#contact" class="smoothScroll">Contact</a>
-			<a href="#"><i class="icon-facebook"></i></a>
-			<a href="#"><i class="icon-twitter"></i></a>
-			<a href="#"><i class="icon-dribbble"></i></a>
-			<a href="#"><i class="icon-envelope"></i></a>
+			
 		</div>
 		
 		<!-- Menu button -->
@@ -60,16 +58,16 @@
 
 	<!-- Responsive Menu -->
 
-	<div class="navbar navbar-fixed-top" id="topNav" data-activeslide="1">
+	<div class="navbar navbar-fixed-top" id="topNav">
 		<div class="container">
 			
 				<ul class="nav row">
-					<li data-slide="1" class="col-12 col-sm-2"><a id="menu-link-1" href="#slide-1" title="Next Section"> HOME</a></li>
-					<li data-slide="2" class="col-12 col-sm-2"><a id="menu-link-2" href="#slide-2" title="Next Section">ABOUT</a></li>
-					<li data-slide="3" class="col-12 col-sm-2"><a id="menu-link-3" href="#slide-3" title="Next Section">PACKAGES</a></li>
-					<li data-slide="4" class="col-12 col-sm-2"><a id="menu-link-4" href="#slide-4" title="Next Section">FAQ</a></li>
-					<li data-slide="5" class="col-12 col-sm-2"><a id="menu-link-5" href="#slide-5" title="Next Section"> <span class="text">CONTACT</span></a></li>
-					<li data-slide="6" class="col-12 col-sm-2"><a id="menu-link-6" href="#slide-6" title="Next Section"><span class="text">LOGIN</span></a></li> 
+					<li class="col-12 col-sm-2"><a id="menu-link-1" href="#home" title="Next Section"> HOME</a></li>
+					<li class="col-12 col-sm-2"><a id="menu-link-2" href="#aboutNav" title="Next Section">ABOUT</a></li>
+					<li class="col-12 col-sm-2"><a id="menu-link-3" href="#packageNav" title="Next Section">PACKAGES</a></li>
+					<li class="col-12 col-sm-2"><a id="menu-link-4" href="#faq" title="Next Section">FAQ</a></li>
+					<li class="col-12 col-sm-2"><a id="menu-link-5" href="#members" title="Next Section"> <span class="text">MEMBERS</span></a></li>
+					<li class="col-12 col-sm-2"><a id="menu-link-6" href="#contact" title="Next Section"><span class="text">CONTACT</span></a></li> 
 				</ul>
 				<div class="row">
 					<div class="col-sm-2 active-menu"></div>
@@ -95,13 +93,15 @@
 		</div><!-- /container -->
 	</div><!-- /headerwrap -->
 	
-	
+	<div id="aboutNav">
+
+	</div>
 	<!-- ========== WHITE SECTION ========== -->
 	<div id="w">
-		<div class="container">
+		<div class="container" id="about">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
-				<h3> WE ASPIRE TO BRING PEOPLE TOGETHER <bold>TO CREATE MEMORIES</bold>. <br/>
+				<h3> A PLACE <bold>TO CREATE </bold> NEW FRIENDSHIPS, MEMORIES<br/>
 					<bold>AND ENJOY</bold> OUR LIMITED TIME TOGETHER HERE ON EARTH.<br>WELCOME TO <bold>XO ISLAND</bold>
 				</h3>
 				</div>
@@ -110,7 +110,8 @@
 	</div><!-- /w -->
 	
 	<!-- ========== SERVICES - GREY SECTION ========== -->
-	<section id="services" name="services"></section>
+	<div id="packageNav"></div>
+	<section id="packages" name="packages"></section>
 	<div id="g">
 		<div class="container">
 			<div class="row">
@@ -123,13 +124,13 @@
 					<p>3 nights under the Caribbean stars with acces to community room and shower.  Come meet new friends and enjoy a slice of paradise.  <br> $149</p>
 				</div>
 				<div class="col-lg-3">
-					<img src="assets/img/s1.png">
-					<h4>Bungalow</h4>
+					<img src="assets/img/s3.png">
+					<h4>Cabana</h4>
 					<p>Get a whole Bungalow to yourself.  Comes with your own private bathroom, and two separate rooms that combined sleeps 4 people total.<br>$999
 					</p>
 				</div>
 				<div class="col-lg-3">
-					<img src="assets/img/s3.png">
+					<img src="assets/img/s1.png">
 					<h4>Master Suite</h4>
 					<p>Privacy of the Master Suite, but included bungalow for friends or family. Sleeps 10 people, perfect for planning a family or large group trip. <br>$1,999
 					</p>
@@ -145,40 +146,38 @@
 	</div><!-- /g -->
 	
 	<!-- ========== CHARTS - DARK GREY SECTION ========== -->
-	<div id="dg">
-		<div class="container">
+	<div class="dg" id="faq">
+		<div class="container" id = "faq">
 			<div class="row">
-<<<<<<< HEAD
-				<h3>JOIN OUR WEBINAR TO LEARN MORE</h3>
-				<form method="post" action="mailto:johndangerstorey@gmail.com" >
-				<input type="text">
-				<input type="submit" value="Send Email" /> 
-				</form>
-				<br>
-=======
-				<h3>DISCUS DETAILS IN WEBINAR</h3>
 
+				<h3><strong>Frequently Asked Questions</strong></h3>
 
+				<!--FAQ-->
 
-				<!-- Begin MailChimp Signup Form -->
+				<div class="row-fluid" id='topSpace'>
+				  <div class="col-lg-6" id="firstFaq">
+				  	<h3>How Long Should they be?</h3>
+				  	<p >Here is a short description that answers the FAQ posted above. Let's see how long it gets.  Let's keep these to two lines. Three lines MAYBE.</p>
+				  	<h3>FAQ #3</h3>
+				  	<p>Here is a short description that answers the FAQ posted above. Let's see how long it gets.  Let's keep these to two lines. Three lines MAYBE.</p>
+				  	<h3>FAQ #5</h3>
+				  	<p>Here is a short description that answers the FAQ posted above. Let's see how long it gets.  Let's keep these to two lines. Three lines MAYBE.</p>
+				  	
+				  </div> 
 
-				<div id="mc_embed_signup">
-				<form action="http://xoisland.us3.list-manage.com/subscribe/post?u=89c53c32c5e735943d83e3331&amp;id=f5016dc562" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	
-				<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email" required>
-    			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    			<div style="position: absolute; left: -5000px;"><input type="text" name="b_89c53c32c5e735943d83e3331_f5016dc562" value=""></div>
-				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-				</form>
+				  <div class="col-lg-6" id="faq">
+				  	<h3>What Does <i>Unlimited Access</i> Imply?</h3>
+				  	<p>Here is a short description that answers the FAQ posted above. Let's see how long it gets.  Let's keep these to two lines. Three lines MAYBE.</p>
+				  	<h3>FAQ #4</h3>
+				  	<p>Here is a short description that answers the FAQ posted above. Let's see how long it gets.  Let's keep these to two lines. Three lines MAYBE.</p>
+				  	<h3>FAQ #6</h3>
+				  	<p>Here is a short description that answers the FAQ posted above. Let's see how long it gets.  Let's keep these to two lines. Three lines MAYBE.</p>
+				  	
+				  </div>
 				</div>
 
-				<!--End mc_embed_signup-->
-
-
->>>>>>> b7b7c92dcb3b3fe3a5f12a580024b37e39a54f4d
-				<br>
 				
-			<div class="row">
+			<!-- <div class="row">
 				<h3>COOL WORKS</h3>
 				<br>
 				<br>
@@ -191,17 +190,31 @@
 				<div class="col-lg-4 port-space">
 					<a href="item.html"><img src="assets/img/work3.png"></a>
 				</div>				
-			</div>	
+			</div>	 -->
 		</div><!-- /container -->
 	</div><!-- /portfoliowrap -->
 	
 	<!-- ========== WHITE SECTION ========== -->
-	<div id="w">
+	<div id="bl">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
-				<h3>WE WORK HARD TO DELIVER A <bold>HIGH QUALITY SERVICE</bold>. OUR AIM IS YOUR COMPLETE <bold>SATISFACTION</bold>.
+				<h3>REQUEST OUR COMPLETE INFORMATION PACKET
 				</h3>
+
+				<!-- Begin MailChimp Signup Form -->
+
+				<div id="mc_embed_signup">
+				<form action="http://xoisland.us3.list-manage.com/subscribe/post?u=89c53c32c5e735943d83e3331&amp;id=f5016dc562" method="post" name="mc-embedded-subscribe-form" class="form-inline" target="_blank" novalidate>
+	
+				<input type="email" value="" name="EMAIL" class="form-control" placeholder="Email" required>
+    			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    			<div style="position: absolute; left: -5000px;"><input type="text" name="b_89c53c32c5e735943d83e3331_f5016dc562" value=""></div>
+				<input type="submit" value="Request" name="subscribe" class="btn">
+				</form>
+				</div>
+
+				<!--End mc_embed_signup-->
 				</div>
 			</div>
 		</div><!-- /container -->
@@ -217,11 +230,14 @@
 				<br>
 				<div class="col-lg-2"></div>
 				<div class="col-lg-8">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lectus elit, tincidunt nec turpis sed, accumsan iaculis ipsum. Nulla at augue auctor, tristique erat in, ultricies nunc. Mauris eget metus leo. Ut in mi lacinia, mattis nisl non, ultrices risus. Vestibulum aliquet aliquam ipsum ut ullamcorper. Pellentesque fringilla, massa vel rutrum consequat, nulla velit fermentum dolor, sed scelerisque.</p>
-				<br>
-				<br>
+				<p>We are a group of individuals dedicated to accomplishing that which no one thinks we can.  Our reality is so far removed from the world, that people honestly think we are  crazy.  Like, legit crazy.  
+			<br><br>
+				If we don’t do it, someone else will.  So stop sitting around, stop making excuses and start doing what you trully desire. Because the people that are crazy enough to think they can change the world...
+			<br><br>
+				 are the ones who actually do. </p>
 				</div>
-				<div class="col-lg-2"></div>
+			</div>
+				<div class="bottomSpace" id='members'></div>
 				<div class="col-lg-3 team">
 					<img class="img-circle" src="assets/img/Schuette.jpg" height="90" width="90">
 					<h4>Markus Schuette</h4>
@@ -286,23 +302,20 @@
 					<br>
 					<div class="col-lg-4">
 						<h3><b>Send Us A Message:</b></h3>
-						<h3>onassis@blacktie.co</h3>
+						<h3>info@xoisland.com</h3>
 						<br>
 					</div>
 					
 					<div class="col-lg-4">	
 						<h3><b>Call Us:</b></h3>
-						<h3>+55 3984-4389</h3>
+						<h3>208-227-3646</h3>
 						<br>
 					</div>
 					
 					<div class="col-lg-4">
-						<h3><b>We Are Social</b></h3>
-						<p>
-							<a href="index.html#"><i class="icon-facebook"></i></a>
-							<a href="index.html#"><i class="icon-twitter"></i></a>
-							<a href="index.html#"><i class="icon-envelope"></i></a>
-						</p>
+						<h3><b>Request an info packet:</b></h3>
+						<h3>
+							<a href="#">Click Here<a>						</h3>
 						<br>
 					</div>
 				</div>
@@ -312,7 +325,7 @@
 	
 	<div id="c">
 		<div class="container">
-			<p>Created by <a href="http://www.blacktie.co">BLACKTIE.CO</a></p>
+			<p>Created by <a href="http://www.johndangerstorey.com">John D. Storey</a></p>
 		
 		</div>
 	</div>

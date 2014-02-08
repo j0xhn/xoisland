@@ -12,6 +12,35 @@
 	display: none;
 }
 
+#aboutNav {
+	height: 50px;
+	z-index: -100;
+}
+
+#packageNav {
+	height: 50px;
+}
+
+#faq {
+	padding-bottom: 35px;
+}
+
+#firstFaq {
+	padding-bottom: 0px;
+
+}
+
+.toggleThis{
+	display: none;
+}
+
+#topSpace {
+	margin-top: 50px;
+}
+
+.bottomSpace {
+	margin-bottom: 50px;
+}
 
 
 
@@ -31,6 +60,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway";
     font-weight: 300;
     color: #333;
+    padding: 0 3px;
 }
 
 
@@ -160,7 +190,7 @@ a:after {
 #w {
 	background: #ffffff;
 	padding-top: 35px;
-	padding-bottom: 35px;
+	padding-bottom: 50px;
 	text-align: center;
 }
 
@@ -185,11 +215,24 @@ a:after {
 }
 
 /* Dark Grey Wrap */
-#dg {
+.dg {
 	background: #e0e0e0;
 	padding-top: 70px;
 	padding-bottom: 70px;
 	text-align: center;
+}
+
+/* Green Wrap */
+#bl {
+	background: #66B5D7;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	text-align: center;
+	
+}
+
+#bl h3 {
+	color: white;
 }
 
 /* Footer Wrap */
