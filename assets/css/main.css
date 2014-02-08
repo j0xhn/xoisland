@@ -42,6 +42,11 @@
 	margin-bottom: 50px;
 }
 
+#requestBtn {
+	display:inline-block;
+	background-color: rgb(245, 132, 122);
+}
+
 
 
 body {
@@ -147,7 +152,7 @@ a:after {
 
 #headerwrap h2 {
 	color: white;
-	font-size: 45px;
+	font-size: 40px;
 	font-weight: 100;
 	letter-spacing: 2px;
 	text-shadow: 1px 1px 1px grey;
@@ -226,7 +231,7 @@ a:after {
 #bl {
 	background: #66B5D7;
 	padding-top: 35px;
-	padding-bottom: 35px;
+	padding-bottom: 50px;
 	text-align: center;
 	
 }
