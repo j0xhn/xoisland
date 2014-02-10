@@ -58,6 +58,11 @@
 	background-color: rgb(245, 132, 122);
 	color: rgb(122, 43, 43);
 }
+.packageBtn{
+	display:inline-block;
+	background-color: #aaf0d1;
+	color: #446053
+}
 
 .images {
   padding-right: 15px;
@@ -68,6 +73,11 @@
 
 .images img{
 	margin: 5px 5px 5px 5px;
+}
+
+.imgGallery{
+
+	width:24%;
 }
 
 
