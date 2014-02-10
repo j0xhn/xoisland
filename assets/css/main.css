@@ -41,11 +41,33 @@
 .bottomSpace {
 	margin-bottom: 50px;
 }
+ #members h3 {
+ 	margin-top: 30px;
+ }
+
+ #packageText {
+ 	width: 700px;
+ 	padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+ }
 
 #requestBtn {
 	display:inline-block;
 	background-color: rgb(245, 132, 122);
 	color: rgb(122, 43, 43);
+}
+
+.images {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.images img{
+	margin: 5px 5px 5px 5px;
 }
 
 
@@ -228,11 +250,11 @@ a:after {
 	text-align: center;
 }
 
-/* Green Wrap */
+/* Blue Wrap */
 #bl {
 	background: #66B5D7;
 	padding-top: 35px;
-	padding-bottom: 50px;
+	padding-bottom: 60px;
 	text-align: center;
 	
 }
@@ -266,7 +288,7 @@ a:after {
 #c {
 	background: #222222;
 	padding-top: 15px;
-	text-align: right;
+	text-align: center;
 }
 
 #c p {
