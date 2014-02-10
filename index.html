@@ -45,10 +45,13 @@
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link href="assets/lightbox/css/lightbox.css" rel="stylesheet" />
 
     <script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/Chart.js"></script>
 	<script src="assets/js/modernizr.custom.js"></script>
+	<script src="assets/lightbox/js/jquery-1.10.2.min.js"></script>
+    <script src="assets/lightbox/js/lightbox-2.6.min.js"></script>
 	
 
 	
@@ -72,12 +75,12 @@
 		<div class="menu-wrap">
 			<h1 class="logo"><a href="index.html#home">XO Island</a></h1>
 			<i class="icon-remove menu-close"></i>
-			<a href="#home" class="smoothScroll">Home</a>
-			<a href="#services" class="smoothScroll">About</a>
-			<a href="#portfolio" class="smoothScroll">Packages</a>
-			<a href="#about" class="smoothScroll">FAQ</a>
-			<a href="#members" class="smoothScroll">Members</a>
-			<a href="#contact" class="smoothScroll">Contact</a>
+			<a href="#home" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'Home']);">Home</a>
+			<a href="#services" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'About']);">About</a>
+			<a href="#portfolio" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'Packages']);">Packages</a>
+			<a href="#about" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'FAQ']);">FAQ</a>
+			<a href="#members" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'Members']);">Members</a>
+			<a href="#contact" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'Contact']);">Contact</a>
 			
 		</div>
 		
@@ -91,12 +94,12 @@
 		<div class="container">
 			
 				<ul class="nav row">
-					<li class="col-12 col-sm-2"><a id="menu-link-1" href="#home" title="Next Section"> HOME</a></li>
-					<li class="col-12 col-sm-2"><a id="menu-link-2" href="#aboutNav" title="Next Section">ABOUT</a></li>
-					<li class="col-12 col-sm-2"><a id="menu-link-3" href="#packageNav" title="Next Section">PACKAGES</a></li>
-					<li class="col-12 col-sm-2"><a id="menu-link-4" href="#faq" title="Next Section">FAQ</a></li>
-					<li class="col-12 col-sm-2"><a id="menu-link-5" href="#members" title="Next Section"> <span class="text">MEMBERS</span></a></li>
-					<li class="col-12 col-sm-2"><a id="menu-link-6" href="#contact" title="Next Section"><span class="text">CONTACT</span></a></li> 
+					<li class="col-12 col-sm-2"><a id="menu-link-1" href="#home" title="Next Section" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Click', 'Home']);"> HOME</a></li>
+					<li class="col-12 col-sm-2"><a id="menu-link-2" href="#aboutNav" title="Next Section" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Click', 'About']);">ABOUT</a></li>
+					<li class="col-12 col-sm-2"><a id="menu-link-3" href="#packageNav" title="Next Section" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Click', 'Packages']);">PACKAGES</a></li>
+					<li class="col-12 col-sm-2"><a id="menu-link-4" href="#faq" title="Next Section" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Click', 'FAQ']);">FAQ</a></li>
+					<li class="col-12 col-sm-2"><a id="menu-link-5" href="#members" title="Next Section" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Click', 'Members']);"> <span class="text">MEMBERS</span></a></li>
+					<li class="col-12 col-sm-2"><a id="menu-link-6" href="#contact" title="Next Section" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Click', 'Contact']);"><span class="text">CONTACT</span></a></li> 
 				</ul>
 				<div class="row">
 					<div class="col-sm-2 active-menu"></div>
@@ -148,25 +151,34 @@
 					<img src="assets/img/s2.png">
 					<h4>Backpacker</h4>
 					<p>3 nights under the Caribbean stars with acces to community room and shower.  Come meet new friends and enjoy a slice of paradise.  <br> $149/onetime ~ $90/yr</p>
+					<form><input type="button" value="More Info" class="btn packageBtn" id='backpackerBtn' onClick="parent.location='index.html'; _gaq.push(['_trackEvent', 'Body Links', 'Click', 'Backpacker Package']);">
+
 				</div>
 				<div class="col-lg-3">
 					<img src="assets/img/s3.png">
 					<h4>Cabana</h4>
 					<p>Get a whole Bungalow to yourself.  Comes with your own private bathroom, and two separate rooms that combined sleeps 4 people total.<br>$999
 					</p>
+					<form><input type="button" value="More Info" class="btn packageBtn" id='cabanaBtn' onClick="parent.location='index.html'; _gaq.push(['_trackEvent', 'Body Links', 'Click', 'Cabana Package']);">
+
 				</div>
 				<div class="col-lg-3">
 					<img src="assets/img/s1.png">
 					<h4>Master Suite</h4>
 					<p>Privacy of the Master Suite, but included bungalow for friends or family. Sleeps 10 people, perfect for planning a family or large group trip. <br>$1,999
 					</p>
+					<form><input type="button" value="More Info" class="btn packageBtn" id='mastersuiteBtn' onClick="parent.location='index.html'; _gaq.push(['_trackEvent', 'Body Links', 'Click', 'Master Suite Package']);">
+
 				</div>
 				<div class="col-lg-3">
 					<img src="assets/img/s4.png">
 					<h4>Full Island</h4>
 					<p>Get the Island all to yourself and 32 friends for scuba diving, fishing and fine dining.  Perfect for a large family reunion, or corporate getaway. <br> $5,000 
 					</p>
+					<form><input type="button" value="More Info" class="btn packageBtn" id='fullislandBtn' onClick="parent.location='index.html'; _gaq.push(['_trackEvent', 'Body Links', 'Click', 'Full Island Package']);">
+
 				</div>
+
 				<div class="row">
 				<div class='col-lg-8 col-lg-offset-2'>
 				<h3>ALL <b>3 NIGHT</b> PACKAGES INCLUDE <b>MEALS</b>, <b>TRANSPORTATION</b> & <b>UNLIMITED USE</b> THROUGOUT THE YEAR.</h3>
@@ -182,15 +194,19 @@
 
 	<div id="w">
 		<div class='images' id='topSpace'>
-			<img src="assets/img/onSite/island_pretty.jpg">
-			<img src="assets/img/onSite/structure_path.jpg">
-			<img src="assets/img/onSite/people_baracuda.jpg">
-			<img src="assets/img/onSite/island_volleyball.jpg">
 
-			<img src="assets/img/onSite/activity_volleyball.jpg">
-			<img src="assets/img/onSite/structure_dock.jpg">
-			<img src="assets/img/onSite/structure_table.jpg">
-			<img src="assets/img/onSite/structure_trees.jpg">
+
+		<a href="assets/img/onSite/island_pretty.jpg" data-lightbox="gallery"><img src="assets/img/onSite/island_pretty.jpg" class="imgGallery" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Pretty Island Image']);"></a>
+		<a href="assets/img/onSite/structure_path.jpg" data-lightbox="gallery"><img src="assets/img/onSite/structure_path.jpg" class="imgGallery" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Sturcture Path Image']);"></a>
+		<a href="assets/img/onSite/people_baracuda.jpg" data-lightbox="gallery"><img src="assets/img/onSite/people_baracuda.jpg" class="imgGallery" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'People Baracuda Image']);"></a>
+		<a href="assets/img/onSite/island_volleyball.jpg" data-lightbox="gallery"><img src="assets/img/onSite/island_volleyball.jpg" class="imgGallery" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Island Volleyball Image']);"></a>
+
+		<a href="assets/img/onSite/activity_volleyball.jpg" data-lightbox="gallery"><img src="assets/img/onSite/activity_volleyball.jpg" class="imgGallery" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Activity Volleyball Image']);"></a>
+		<a href="assets/img/onSite/structure_dock.jpg" data-lightbox="gallery"><img src="assets/img/onSite/structure_dock.jpg" class="imgGallery" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Structure Dock Image']);"></a>
+		<a href="assets/img/onSite/structure_table.jpg" data-lightbox="gallery"><img src="assets/img/onSite/structure_table.jpg" class="imgGallery" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Structure Table Image']);"></a>
+		<a href="assets/img/onSite/structure_trees.jpg" data-lightbox="gallery"><img src="assets/img/onSite/structure_trees.jpg" class="imgGallery" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Structure Trees Image']);"></a>
+        
+
 	</div>
 	</div><!-- /w -->
 	
@@ -207,13 +223,13 @@
 				  <div class="col-lg-6" id="firstFaq">
 
 				  	<h3>Is this real?</h3>
-				  	<p>Absolutely. John read <a href="http://tynan.com/island">this blog post</a> and decided to do it too, but in the Caribbean. (Take that Tynan!) It's really not that far-fetched once you critically think about it.  It's actually cheaper than a lot of <i>normal</i> properties.</p>
+				  	<p>Absolutely. John read <a href="http://tynan.com/island" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Tynan Blog Post']);">Contact</a>>this blog post</a> and decided to do it too, but in the Caribbean. (Take that Tynan!) It's really not that far-fetched once you critically think about it.  It's actually cheaper than a lot of <i>normal</i> properties.</p>
 
 				  	<h3>Are the packages above the only ones?</h3>
 				  	<p >Nope, we have a couple of different payment options and in-between packages.  Request our packet by emailing info@xoisland.com or feel free to give us a call: 208.227.3646.  We even have a special one for bloggers!</p>
 
 				  	<h3>Where is the Island located</h3>
-				  	<p>It's off the coast of Nicaragua, close to a town called "Bluefields" in the Caribbean. <a href='https://www.google.com/maps/preview/place/Bluefields/@12.0212394,-83.3710814,10z/data=!4m2!3m1!1s0x8f0c080f4abf8e47:0x92d11a78363b0544'>Here is a link</a> to the google map.  To see the exact group of islands you have to download google earth though. </p>
+				  	<p>It's off the coast of Nicaragua, close to a town called "Bluefields" in the Caribbean. <a href='https://www.google.com/maps/preview/place/Bluefields/@12.0212394,-83.3710814,10z/data=!4m2!3m1!1s0x8f0c080f4abf8e47:0x92d11a78363b0544' onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Nicaragua Map']);">Contact</a>>Here is a link</a> to the google map.  To see the exact group of islands you have to download google earth though. </p>
 				  	
 				  </div> 
 
@@ -370,7 +386,7 @@
 					<div class="col-lg-4">
 						<h3><b>Request an info packet:</b></h3>
 						<h3>
-							<a href="mailto:info@openapparatus.com">Click Here<a>		
+							<a href="mailto:info@openapparatus.com" onClick="_gaq.push(['_trackEvent', 'Footer Links', 'Click', 'Request Packet']);">Click Here<a>		
 						</h3>
 						<br>
 					</div>
@@ -381,7 +397,7 @@
 	
 	<div id="c">
 		<div class="container">
-			<p></a> Created by <a href="http://www.johndangerstorey.com">John D. Storey</a> & <a href='http://www.openapparatus.com'> Open Apparatus </a></p>
+			<p></a> Created by <a href="http://www.johndangerstorey.com" onClick="_gaq.push(['_trackEvent', 'Footer Links', 'Click', 'John D']);">John D. Storey</a> & <a href='http://www.openapparatus.com' onClick="_gaq.push(['_trackEvent', 'Footer Links', 'Click', 'Open Apparatus']);"> Open Apparatus </a></p>
 		
 		</div>
 	</div>
