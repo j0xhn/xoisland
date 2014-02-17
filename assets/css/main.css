@@ -53,6 +53,13 @@
   margin-left: auto;
  }
 
+ .video {
+ 	padding: 0 10px;
+ 	max-width: 600px;
+ 	float: none;
+ 	margin: 0 auto;
+ }
+
 #requestBtn {
 	display:inline-block;
 	background-color: rgb(245, 132, 122);
