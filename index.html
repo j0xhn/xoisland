@@ -124,19 +124,28 @@
 			</div>
 		</div><!-- /container -->
 	</div><!-- /headerwrap -->
-	
-	
+
+
+
+
 	<!-- ========== ABOUT SECTION ========== -->
+
 	<div id="aboutNav"></div>
 	<div id="w">
 		<div class="container" id="about">
 			<div class="row">
+
+		<!-- ========== VIDEO ========== -->
+
 				<div class='video'>
-					<video src="assets/video/IntroVideo.mp4" width='100%' poster='assets/video/videoPoster.jpg' controls>
-					Sorry, looks like your browser doesn't support video playback.but don't worry, you can <a href="assets/video/IntroVideo.mp4">download it</a>
-	  				and watch it with your favorite video player!
+					<video src="assets/video/IntroVideo.mp4" width='100%' poster='assets/video/videoPoster.jpg' controls onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Video Click']);">
+					Sorry, looks like your browser doesn't support video playback. Don't worry though, you can <a href="assets/video/IntroVideo.mp4">download it here</a>
+	  				and watch it on your computer.
 					</video>
 				</div>
+
+		<!-- ========== END VIDEO ========== -->
+
 				<div class="col-lg-8 col-lg-offset-2">
 				<h3> A PLACE <bold>TO CREATE </bold> NEW FRIENDSHIPS, MEMORIES<br/>
 					<bold>AND ENJOY</bold> OUR LIMITED TIME TOGETHER HERE ON EARTH.<br><br>WELCOME TO <bold>XO ISLAND</bold>
@@ -145,8 +154,38 @@
 			</div>
 		</div><!-- /container -->
 	</div><!-- /w -->
+
+	<!-- ========== MAIL CHIMP ========== -->
+
+	<div id="bl">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+				<h3>REQUEST THE COMPLETE INFORMATION PACKET
+				</h3>
+
+				<!-- Begin MailChimp Signup Form -->
+
+				
+				<form action="http://xoisland.us3.list-manage.com/subscribe/post?u=89c53c32c5e735943d83e3331&amp;id=f5016dc562" method="post" class="form-inline" target="_blank" novalidate>
+	
+				<input type="email" value="" name="EMAIL" class="form-control" placeholder="Email" required>
+    			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    			<div style="position: absolute; left: -5000px;"><input type="text" name="b_89c53c32c5e735943d83e3331_f5016dc562" value=""></div>
+				<input type="submit" value="Send Request" class="btn" id='requestBtn' onClick="_gaq.push(['_trackEvent', 'Request Info', 'Click', 'Mail Chimp']);">
+				</form>
+				
+
+				<!--End mc_embed_signup-->
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /w -->
+	
+	
 	
 	<!-- ========== PACKAGE SECTION ========== -->
+
 	<div id="packageNav"></div>
 	<section id="packages" name="packages"></section>
 	<div class="g">
@@ -166,7 +205,7 @@
 				<div class="col-lg-3">
 					<img src="assets/img/s3.png">
 					<h4>Bed on Beach</h4>
-					<p>Candle-lit beaches, a canopy bed on the beach and ultimate seclusion. Surround yourself with beauty, nature, and share it with someone special.<br><b>$499</b></p>
+					<p>Candle-lit beaches, a canopy bed on the beach and  seclusion. Surround yourself with beauty, nature, and share it with someone special.<br><b>$499</b></p>
 					<a href="mailto:info@xoisland.com" class="btn packageBtn" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Cabana Package']);"> Romantic? </a>
 					
 
@@ -174,8 +213,7 @@
 				<div class="col-lg-3">
 					<img src="assets/img/s1.png">
 					<h4>Private Villa</h4>
-					<p>Get away from the routine to invest time with those closest to you. Your own bathroom, king-sized, and twin beds. Ideal for a couple or small family.<br><b>$999</b> up-front
-					with unlimited access for only <b>$378</b> per year. 
+					<p>Get away from the routine to invest time with those closest to you. Your own bathroom, king-sized, and twin beds. Ideal for a couple or small family.<br><b>$999</b>  
 					</p>
 					<a href="mailto:info@xoisland.com" class="btn packageBtn" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Cabana Package']);"> More Info </a>
 
@@ -183,8 +221,7 @@
 				<div class="col-lg-3">
 					<img src="assets/img/s4.png">
 					<h4>Master Suite</h4>
-					<p>360&deg views of the entire island from your balcony. Additional private villa to sleep 6 comfortably. Perfect for planning a family or large group trip. <br><b>$1,999</b> up-front
-					with unlimited access for only <b>$840</b> per year. 
+					<p>360&deg views of the entire island from your balcony. Additional private villa to sleep 6 comfortably. Perfect for planning a family or large group trip. <br><b>$1,999</b>  
 					</p>
 					<a href="mailto:info@xoisland.com" class="btn packageBtn" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Master Group Package']);"> Inquire</a>
 
@@ -247,7 +284,7 @@
 		<div class='images' id='topSpace'>
 
 
-		<a href="assets/img/island/island_pretty.jpg" data-lightbox="gallery" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Pretty Island Image']);"><img src="assets/img/onSite/island_pretty.jpg"></a>
+		<iframe id='mapIframe' src="https://www.google.com/maps/embed?pb=!1m16!1m11!1m3!1d132666.31700395612!2d-83.423056!3d12.437164!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!1s0x0%3A0x4569f4b8f1a3d22b!5e1!3m2!1sen!2sus!4v1392680750564" width="300" height="200" frameborder="0"></iframe>
 		<a href="assets/img/island/structure_path.jpg" data-lightbox="gallery" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Sturcture Path Image']);"><img src="assets/img/onSite/structure_path.jpg"></a>
 		<a href="assets/img/island/people_baracuda.jpg" data-lightbox="gallery" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'People Baracuda Image']);"><img src="assets/img/onSite/people_baracuda.jpg"></a>
 		<a href="assets/img/island/island_volleyball.png" data-lightbox="gallery" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Island Volleyball Image']);"><img src="assets/img/onSite/island_volleyball.jpg"></a>
@@ -278,7 +315,7 @@
 				  	<p>We offer packages for nearly any interested group size. This includes multiple payment options and in-between packages. Send your questions to info@xoisland.com.</p>
 
 				  	<h3>Where is the Island located</h3>
-				  	<p>Located near Cayo Grape in the Caribbean, XO Island can be accessed from a town called "Bluefields". <a href='https://www.google.com/maps/place/Cayo+Grape/@12.4371637,-83.4230556,11z/data=!3m1!4b1!4m2!3m1!1s0x8f0e99e2c06f47c7:0x4569f4b8f1a3d22b' onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Nicaragua Map']);">Here is a link</a> to the google map.  To see the exact group of islands you have to download google earth though. </p>
+				  	
 				  	
 				  </div> 
 
@@ -298,32 +335,7 @@
 		</div>
 	</div>
 	
-	<!-- ========== MAIL CHIMP ========== -->
-
-	<div id="bl">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-				<h3>REQUEST THE COMPLETE INFORMATION PACKET
-				</h3>
-
-				<!-- Begin MailChimp Signup Form -->
-
-				
-				<form action="http://xoisland.us3.list-manage.com/subscribe/post?u=89c53c32c5e735943d83e3331&amp;id=f5016dc562" method="post" class="form-inline" target="_blank" novalidate>
 	
-				<input type="email" value="" name="EMAIL" class="form-control" placeholder="Email" required>
-    			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    			<div style="position: absolute; left: -5000px;"><input type="text" name="b_89c53c32c5e735943d83e3331_f5016dc562" value=""></div>
-				<input type="submit" value="Send Request" class="btn" id='requestBtn' onClick="_gaq.push(['_trackEvent', 'Request Info', 'Click', 'Mail Chimp']);">
-				</form>
-				
-
-				<!--End mc_embed_signup-->
-				</div>
-			</div>
-		</div><!-- /container -->
-	</div><!-- /w -->
 	
 	<!-- ========== MEMBERS SECTION ========== -->
 	
