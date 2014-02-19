@@ -114,14 +114,49 @@
 		<div class="container">
 			<br>
 			<h1 id="responsive">XO ISlAND</h1>
-			<h2>Crowdfund a Piece of Paradise</h2>
-			<div class="row">
-				<br>
-				<br>
-				<br>
-				<div class="col-lg-6 col-lg-offset-3">
+			<h2>Vacation on Your Own Private Island</h2>
+			<br>
+			<br>
+			<a data-toggle="modal" data-target="#myModal" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Video Click']);">
+  				<img src='assets/img/onSite/videoPlayButton.png' id='videoButton'>
+			</a>
+
+			<!-- ========== VIDEO FOR MOBILE ========== -->
+
+				<div class='video' id='mobileVideo'>
+					<video src="assets/video/IntroVideo.mp4" width='100%' poster='assets/video/videoPoster.jpg' controls onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Video Click']);">
+					Sorry, looks like your browser doesn't support video playback. Don't worry though, you can <a href="assets/video/IntroVideo.mp4">download it here</a>
+	  				and watch it on your computer.
+					</video>
 				</div>
-			</div>
+
+		<!-- ========== END VIDEO ========== -->
+
+<!-- ========== VIDEO MODAL ========== -->
+
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  				<div class="modal-dialog modal-lg">
+    				<div class="modal-content">
+      					<!-- <div class="modal-header">
+        					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        					<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      					</div> -->
+      					<div class="modal-body" id='modal-video'>
+
+      						<video src="assets/video/IntroVideo.mp4" width='100%' poster='assets/video/videoPoster.jpg' controls id='videoElem'>
+      						<!-- <source src="assets/video/IntroVideo.mp4" type='video/mp4'>  --> 
+							Sorry, looks like your browser doesn't support video playback. Don't worry though, you can <a href="assets/video/IntroVideo.mp4">download it here</a>
+	  						and watch it on your computer.
+							</video>
+      					
+      					</div>
+      					<!-- <div class="modal-footer">
+        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        					<button type="button" class="btn btn-primary">Save changes</button>
+      					</div> -->
+    				</div>
+  				</div>
+			</div><!-- /modal -->
 		</div><!-- /container -->
 	</div><!-- /headerwrap -->
 
@@ -134,17 +169,6 @@
 	<div id="w">
 		<div class="container" id="about">
 			<div class="row">
-
-		<!-- ========== VIDEO ========== -->
-
-				<div class='video'>
-					<video src="assets/video/IntroVideo.mp4" width='100%' poster='assets/video/videoPoster.jpg' controls onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Video Click']);">
-					Sorry, looks like your browser doesn't support video playback. Don't worry though, you can <a href="assets/video/IntroVideo.mp4">download it here</a>
-	  				and watch it on your computer.
-					</video>
-				</div>
-
-		<!-- ========== END VIDEO ========== -->
 
 				<div class="col-lg-8 col-lg-offset-2">
 				<h3> A PLACE <bold>TO CREATE </bold> NEW FRIENDSHIPS, MEMORIES<br/>
@@ -195,16 +219,17 @@
 
 	<!-- ========== NEW PACKAGE SECTION ========== -->
 
-				<div class="col-lg-3">
+				<div class="col-lg-3" id='groupPackages'>
 					<img src="assets/img/s2.png">
-					<h4>Backpacker</h4>
+					<h4><b>Backpacker</b></h4>
+					<h5><em>1 Person</em></h5>
 					<p>3 nights under the Caribbean stars in a hammock. Join fellow islanders in the group villa to mix and mingle. Adventure, activites, and great people. <br><b>$149</b></p>
 					<a href="mailto:info@xoisland.com" class="btn packageBtn" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Backpacker Package']);"> Let's do this! </a>
 
 				</div>
 				<div class="col-lg-3">
 					<img src="assets/img/s3.png">
-					<h4>Bed on Beach</h4>
+					<h4>Bed on Beach - 2 People</h4>
 					<p>Candle-lit beaches, a canopy bed on the beach and  seclusion. Surround yourself with beauty, nature, and share it with someone special.<br><b>$499</b></p>
 					<a href="mailto:info@xoisland.com" class="btn packageBtn" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Cabana Package']);"> Romantic? </a>
 					
@@ -212,7 +237,7 @@
 				</div>
 				<div class="col-lg-3">
 					<img src="assets/img/s1.png">
-					<h4>Private Villa</h4>
+					<h4>Private Villa - 2-4 People</h4>
 					<p>Get away from the routine to invest time with those closest to you. Your own bathroom, king-sized, and twin beds. Ideal for a couple or small family.<br><b>$999</b>  
 					</p>
 					<a href="mailto:info@xoisland.com" class="btn packageBtn" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Cabana Package']);"> More Info </a>
@@ -220,7 +245,7 @@
 				</div>
 				<div class="col-lg-3">
 					<img src="assets/img/s4.png">
-					<h4>Master Suite</h4>
+					<h4>Master Suite 6-8 People</h4>
 					<p>360&deg views of the entire island from your balcony. Additional private villa to sleep 6 comfortably. Perfect for planning a family or large group trip. <br><b>$1,999</b>  
 					</p>
 					<a href="mailto:info@xoisland.com" class="btn packageBtn" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Master Group Package']);"> Inquire</a>
@@ -269,7 +294,7 @@
 				<h3>
 					<em>UNLIMITED ACCESS</em> MEANS YOUR 3 NIGHT PACKAGES ARE <b>TRANSFERABLE</b> & <b>RE-USABLE</b> ALL YEAR LONG, <b>YEAR AFTER YEAR</b>.
 					<BR><br>
-					INQUIRE ABOUT <b>FULL ISLAND</b> RENTALS <a href="mailto:info@xoisland.com" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Full Island Rental Inquiry']);">HERE</a></h3>
+					IF YOU HAVE OVER <b>20 PEOPLE,</b> INQUIRE ABOUT <b>FULL ISLAND</b> RENTALS <a href="mailto:info@xoisland.com" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Full Island Rental Inquiry']);">HERE</a></h3>
 				<br>
 				<br>
 				</div>
@@ -439,7 +464,7 @@
 	
 	<div id="c">
 		<div class="container">
-			<p></a> Created by <a href="http://www.johndangerstorey.com" onClick="_gaq.push(['_trackEvent', 'Footer Links', 'Click', 'John D']);">John D. Storey</a> & <a href='https://www.facebook.com/markus.schuette' onClick="_gaq.push(['_trackEvent', 'Footer Links', 'Click', 'Markus']);"> Markus Schuette </a></p>
+			<p></a> Built by <a href="http://www.johndangerstorey.com" onClick="_gaq.push(['_trackEvent', 'Footer Links', 'Click', 'John D']);">John D. Storey</a></p>
 		
 		</div>
 	</div>
@@ -452,6 +477,7 @@
     <script src="assets/js/smoothscroll.js"></script>
 	<script src="assets/js/main.js"></script>
     <script src="assets/js/lightbox-2.6.min.js"></script>
+    
 	
 	
 </body>

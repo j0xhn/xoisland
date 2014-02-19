@@ -4073,6 +4073,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 }
 
+
+
 .navbar-collapse {
   max-height: 340px;
   padding-right: 15px;
@@ -5687,12 +5689,11 @@ body.modal-open,
 
 .modal-body {
   position: relative;
-  padding: 20px;
+  padding: 5px;
 }
 
 .modal-footer {
   padding: 19px 20px 20px;
-  margin-top: 15px;
   text-align: right;
   border-top: 1px solid #e5e5e5;
 }
@@ -5734,8 +5735,8 @@ body.modal-open,
   .modal-dialog {
     right: auto;
     left: 50%;
-    width: 600px;
-    padding-top: 30px;
+    width: 800px;
+    padding-top: 110px;
     padding-bottom: 30px;
   }
   .modal-content {
