@@ -66,14 +66,13 @@
   </head>
 
   <body data-spy="scroll" data-offset="0" data-target="#theMenu">
-		
-	<!-- Mobile Menu -->
-	<nav class="menu" id="theMenu">
+
+  	<nav class="menu" id="theMenu">
 		<div class="menu-wrap">
 			<h1 class="logo"><a href="index.html#home">XO Island</a></h1>
 			<i class="icon-remove menu-close"></i>
 			<a href="#home" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'Home']);">Home</a>
-			<a href="#aboutNav" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'About']);">About</a>
+			<a href="#aboutNav" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'About']);">LOCATION</a>
 			<a href="#packageNav" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'Packages']);">Packages</a>
 			<a href="#faq" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'FAQ']);">FAQ</a>
 			<a href="#members" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'Members']);">Members</a>
@@ -87,61 +86,38 @@
 
 	<!-- Responsive Menu -->
 
-<div class="navbar navbar-fixed-top" id="infoNav">
+	<div class="navbar navbar-fixed-top" id="topNav">
 		<div class="container">
 			
 				<ul class="nav row">
-
-					<li class="col-sm-4">
-						<a data-toggle="dropdown">
-			      	ISLAND DETAILS
-			      	<span class="caret"></span>
-			    	</a>
-			    	<ul class="dropdown-menu">
-			      	<li><a href="#">Dropdown link</a></li>
-			      	<li><a href="#">Dropdown link</a></li>
-			    	</ul>
-			 		 </li>
-
-			 		<li class="col-sm-4">
-						<a data-toggle="dropdown">
-			      	OWNERSHIP
-			      	<span class="caret"></span>
-			    	</a>
-			    	<ul class="dropdown-menu">
-			      	<li><a href="#">Dropdown link</a></li>
-			      	<li><a href="#">Dropdown link</a></li>
-			    	</ul>
-			 		 </li>
-
-			 		<li class="col-sm-4">
-						<a data-toggle="dropdown">
-			      	PREPAREDNESS
-			      	<span class="caret"></span>
-			    	</a>
-			    	<ul class="dropdown-menu">
-			      	<li><a href="#">Dropdown link</a></li>
-			      	<li><a href="#">Dropdown link</a></li>
-			    	</ul>
-			 		 </li>
-
+					<li class="col-12 col-sm-2"><a id="menu-link-1" href="#mapNav" title="Next Section" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Click', 'Home']);">LOCATION</a></li>
+					<li class="col-12 col-sm-2"><a id="menu-link-2" href="#aboutNav" title="Next Section" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Click', 'About']);">ABOUT</a></li>
+					<li class="col-12 col-sm-2"><a id="menu-link-3" href="#packageNav" title="Next Section" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Click', 'Packages']);">PACKAGES</a></li>
+					<li class="col-12 col-sm-2"><a id="menu-link-4" href="#faq" title="Next Section" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Click', 'FAQ']);">FAQ</a></li>
+					<li class="col-12 col-sm-2"><a id="menu-link-5" href="#members" title="Next Section" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Click', 'Members']);"> <span class="text">MEMBERS</span></a></li>
+					<li class="col-12 col-sm-2"><a id="menu-link-6" href="#contact" title="Next Section" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Click', 'Contact']);"><span class="text">CONTACT</span></a></li> 
+				</ul>
 				<div class="row">
 					<div class="col-sm-2 active-menu"></div>
 				</div>
 		</div><!-- /.container -->
 	</div><!-- /.navbar -->
+		
+	
 
 	
 	<!-- ========== HEADER SECTION ========== -->
 	
 	<section id="home" name="home"></section>
-	<div class="headerwrap" id='info'>
+	<div class="headerwrap fixed-top" id='info'>
 		<div class="container">
 			<br>
 			<!-- <h1 id="responsive">Complete Island Info</h1> -->
 			<h2>Complete Island Info</h2>
 			<br>
 			<br>
+
+
 		</div>
 	</div>
 	
@@ -152,7 +128,70 @@
 	<div class="g">
 		<div class="container">
 			
-			<div class='row'>
+			<div class='row padding-top'>
+
+
+	<!-- =========== Bottom fixed Menu Starts ======== -->
+	<!-- Mobile Menu -->
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<h1 class="logo"><a href="index.html#home">XO Island</a></h1>
+			<i class="icon-remove menu-close"></i>
+			<a href="#home" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'Home']);">Home</a>
+			<a href="#aboutNav" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'About']);">About</a>
+			<a href="#packageNav" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'Packages']);">Packages</a>
+			<a href="#faq" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'FAQ']);">FAQ</a>
+			<a href="#members" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'Members']);">Members</a>
+			<a href="#contact" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'Contact']);">Contact</a>
+		</div>
+		<!-- Menu button -->
+				<div id="menuToggle"><i class="icon-reorder"></i></div>
+	</nav>
+
+		<!-- Responsive Menu -->
+
+		<div class="navbar navbar-fixed-top margin-top" id="infoNav">
+		<div class="container">
+		<ul class="nav row">
+
+		<li class="col-sm-4">
+		<a data-toggle="dropdown">
+		     	ISLAND DETAILS
+		     	<span class="caret"></span>
+		   	</a>
+		   	<ul class="dropdown-menu">
+		     	<li><a href="#">Dropdown link</a></li>
+		     	<li><a href="#">Dropdown link</a></li>
+		   	</ul>
+		</li>
+
+		<li class="col-sm-4">
+		<a data-toggle="dropdown">
+		     	OWNERSHIP
+		     	<span class="caret"></span>
+		   	</a>
+		   	<ul class="dropdown-menu">
+		     	<li><a href="#">Dropdown link</a></li>
+		     	<li><a href="#">Dropdown link</a></li>
+		   	</ul>
+		</li>
+
+		<li class="col-sm-4">
+		<a data-toggle="dropdown">
+		     	PREPAREDNESS
+		     	<span class="caret"></span>
+		   	</a>
+		   	<ul class="dropdown-menu">
+		     	<li><a href="#">Dropdown link</a></li>
+		     	<li><a href="#">Dropdown link</a></li>
+		   	</ul>
+		</li>
+
+		<div class="row">
+		<div class="col-sm-2 active-menu"></div>
+		</div>
+		</div><!-- /.container -->
+		</div><!-- /.navbar -->
 
 	<!-- ========== NEW PACKAGE SECTION ========== -->
 
