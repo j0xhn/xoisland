@@ -9,8 +9,9 @@
 
 /* My Custom Styles */
 
-#mobileVideo {
-	display
+#infoNav {
+  text-align: center;
+  opacity: .9;
 }
 
 
@@ -19,13 +20,17 @@
 }
 
 
-#aboutNav {
+#aboutNav, #mapNav {
 	height: 50px;
 	z-index: -100;
 }
 
 #packageNav {
 	height: 50px;
+}
+
+#map{
+  height: 207;
 }
 
 #faq {
@@ -103,7 +108,7 @@
 }
 
 @media (min-width: 800px) {
-    #headerwrap h1 {
+    .headerwrap h1 {
 		margin-top: 90px;
     }
 }
@@ -181,14 +186,14 @@ a:after {
    Wrap Sections
    ========================================================================== */
 
-#headerwrap {
+.headerwrap {
 	
 	background: url(../img/header-bg.jpg);
 	margin-top: -10px;
 	padding-top:20px;
 	text-align:center;
 	background-attachment: relative;
-	background-position: center center;
+	background-position: center;
 	min-height: 700px;
 	width: 100%;
 	
@@ -203,9 +208,23 @@ a:after {
     background-size: cover;
 }
 
+.headerwrap#info{
+  background: url(../img/portfolio-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 0;
+}
+
+.headerwrap#info h2 {
+  color: white;
+}
+
+.map img {
+  width: 100%;
+}
 
 
-#headerwrap h1 {
+.headerwrap h1 {
 	color: rgb(255, 255, 255);
 	font-size: 500%;
 	font-weight: 700;
@@ -213,24 +232,24 @@ a:after {
 	text-shadow: 1px 1px 2px grey;
 }
 
-#headerwrap h2 {
+.headerwrap h2 {
 	
 	color: rgb(103, 95, 95);
-	font-size: 40px;
+	font-size: 1.2em;
 	font-weight: 100;
 	letter-spacing: 2px;
 }
 
-#headerwrap h4 {
+.headerwrap h4 {
 	color: white;
 }
 
-#headerwrap img {
+.headerwrap#home img {
 
 	-webkit-transition: all .2s ease-in-out;
 }
 
-#headerwrap img:hover {
+.headerwrap#home img:hover {
 
 	-webkit-transition: all .4s ease-in-out;
 	-webkit-transform: scale(1.1);
@@ -238,12 +257,12 @@ a:after {
 }
 
 @media (max-width: 400px) {
-    #headerwrap {
+    .headerwrap {
       background: #F2F2F2;
       min-height: 500px;
   	}
 
-  	#headerwrap h1 {
+  	.headerwrap h1 {
 	color: rgb(46, 176, 230);
 	font-size: 500%;
 	font-weight: 700;
@@ -252,12 +271,11 @@ a:after {
 	
 	}
 
-	#headerwrap h2 {
-	color: grey;
-	font-size: 30px;
-	font-weight: 100;
-	letter-spacing: 2px;
-	text-shadow: none;
+	.headerwrap h2 {
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-shadow: none;
 	
 	}
 
@@ -358,7 +376,8 @@ a:after {
 	background: #2f2f2f;
 	padding-top: 70px;
 	padding-bottom: 70px;
-	text-align: center
+	text-align: center;
+
 }
 
 #f h3 {

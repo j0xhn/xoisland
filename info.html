@@ -26,10 +26,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ever want to buy a private island in the Caribbean? Get your piece of the very first crowdfunded private island for as little as $149. ">
-    <meta name="author" content="John D. Storey">
-    <link rel="shortcut icon" href="favicon.ico">
-
-    <title>Crowd-fund a Private Island</title>
+    <meta name='Private Island Info Packet'</title>
 
     <!-- FACEBOOK INFO -->
     <meta property="fb:admins" content="203101784" />
@@ -76,7 +73,7 @@
 			<h1 class="logo"><a href="index.html#home">XO Island</a></h1>
 			<i class="icon-remove menu-close"></i>
 			<a href="#home" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'Home']);">Home</a>
-			<a href="#aboutNav" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'About']);">LOCATION</a>
+			<a href="#aboutNav" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'About']);">About</a>
 			<a href="#packageNav" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'Packages']);">Packages</a>
 			<a href="#faq" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'FAQ']);">FAQ</a>
 			<a href="#members" class="smoothScroll" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Touch', 'Members']);">Members</a>
@@ -90,17 +87,44 @@
 
 	<!-- Responsive Menu -->
 
-	<div class="navbar navbar-fixed-top" id="topNav">
+<div class="navbar navbar-fixed-top" id="infoNav">
 		<div class="container">
 			
 				<ul class="nav row">
-					<li class="col-12 col-sm-2"><a id="menu-link-1" href="#mapNav" title="Next Section" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Click', 'Home']);">LOCATION</a></li>
-					<li class="col-12 col-sm-2"><a id="menu-link-2" href="#aboutNav" title="Next Section" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Click', 'About']);">ABOUT</a></li>
-					<li class="col-12 col-sm-2"><a id="menu-link-3" href="#packageNav" title="Next Section" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Click', 'Packages']);">PACKAGES</a></li>
-					<li class="col-12 col-sm-2"><a id="menu-link-4" href="#faq" title="Next Section" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Click', 'FAQ']);">FAQ</a></li>
-					<li class="col-12 col-sm-2"><a id="menu-link-5" href="#members" title="Next Section" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Click', 'Members']);"> <span class="text">MEMBERS</span></a></li>
-					<li class="col-12 col-sm-2"><a id="menu-link-6" href="#contact" title="Next Section" onClick="_gaq.push(['_trackEvent', 'Navbar Links', 'Click', 'Contact']);"><span class="text">CONTACT</span></a></li> 
-				</ul>
+
+					<li class="col-sm-4">
+						<a data-toggle="dropdown">
+			      	ISLAND DETAILS
+			      	<span class="caret"></span>
+			    	</a>
+			    	<ul class="dropdown-menu">
+			      	<li><a href="#">Dropdown link</a></li>
+			      	<li><a href="#">Dropdown link</a></li>
+			    	</ul>
+			 		 </li>
+
+			 		<li class="col-sm-4">
+						<a data-toggle="dropdown">
+			      	OWNERSHIP
+			      	<span class="caret"></span>
+			    	</a>
+			    	<ul class="dropdown-menu">
+			      	<li><a href="#">Dropdown link</a></li>
+			      	<li><a href="#">Dropdown link</a></li>
+			    	</ul>
+			 		 </li>
+
+			 		<li class="col-sm-4">
+						<a data-toggle="dropdown">
+			      	PREPAREDNESS
+			      	<span class="caret"></span>
+			    	</a>
+			    	<ul class="dropdown-menu">
+			      	<li><a href="#">Dropdown link</a></li>
+			      	<li><a href="#">Dropdown link</a></li>
+			    	</ul>
+			 		 </li>
+
 				<div class="row">
 					<div class="col-sm-2 active-menu"></div>
 				</div>
@@ -109,110 +133,17 @@
 
 	
 	<!-- ========== HEADER SECTION ========== -->
+	
 	<section id="home" name="home"></section>
-	<div class="headerwrap" id='home'>
+	<div class="headerwrap" id='info'>
 		<div class="container">
 			<br>
-			<h1 id="responsive">XO ISlAND</h1>
-			<h2>Vacation on Your Own Private Island</h2>
+			<!-- <h1 id="responsive">Complete Island Info</h1> -->
+			<h2>Complete Island Info</h2>
 			<br>
 			<br>
-			<a data-toggle="modal" data-target="#myModal" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Video Click']);">
-  				<img src='assets/img/onSite/videoPlayButton.png' id='videoButton'>
-			</a>
-
-			<!-- ========== VIDEO FOR MOBILE ========== -->
-
-				<div class='video' id='mobileVideo'>
-					<video src="assets/video/IntroVideo.mp4" width='100%' poster='assets/video/videoPoster.jpg' controls onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Video Click']);">
-					Sorry, looks like your browser doesn't support video playback. Don't worry though, you can <a href="assets/video/IntroVideo.mp4">download it here</a>
-	  				and watch it on your computer.
-					</video>
-				</div>
-
-		<!-- ========== END VIDEO ========== -->
-
-<!-- ========== VIDEO MODAL ========== -->
-
-			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  				<div class="modal-dialog modal-lg">
-    				<div class="modal-content">
-      					<!-- <div class="modal-header">
-        					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        					<h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      					</div> -->
-      					<div class="modal-body" id='modal-video'>
-
-      						<video src="assets/video/IntroVideo.mp4" width='100%' poster='assets/video/videoPoster.jpg' controls id='videoElem'>
-      						<!-- <source src="assets/video/IntroVideo.mp4" type='video/mp4'>  --> 
-							Sorry, looks like your browser doesn't support video playback. Don't worry though, you can <a href="assets/video/IntroVideo.mp4">download it here</a>
-	  						and watch it on your computer.
-							</video>
-      					
-      					</div>
-      					<!-- <div class="modal-footer">
-        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        					<button type="button" class="btn btn-primary">Save changes</button>
-      					</div> -->
-    				</div>
-  				</div>
-			</div><!-- /modal -->
-		</div><!-- /container -->
-	</div><!-- /headerwrap -->
-
-	<!-- ========== MAP SECTION ========== -->
-
-	<section id="mapNav" name="map"></section>
-		<div class = "map">
-			<img src="assets/img/map.png">
 		</div>
-
-
-	<!-- ========== ABOUT SECTION ========== -->
-
-	<div id="aboutNav"></div>
-
-	<div id="w">
-		<div class="container" id="about">
-			<div class="row">
-
-				<div class="col-lg-8 col-lg-offset-2">
-				<h3> A PLACE <bold>TO CREATE </bold> NEW FRIENDSHIPS, MEMORIES<br/>
-					<bold>AND ENJOY</bold> OUR LIMITED TIME TOGETHER HERE ON EARTH.<br><br>WELCOME TO <bold>XO ISLAND</bold>
-				</h3>
-				</div>
-			</div>
-		</div><!-- /container -->
-	</div><!-- /w -->
-
-	<!-- ========== MAIL CHIMP ========== -->
-
-	<div id="bl">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-				<h3>REQUEST THE COMPLETE INFORMATION PACKET
-				</h3>
-
-				<!-- Begin MailChimp Signup Form -->
-
-				
-				<form action="http://xoisland.us3.list-manage.com/subscribe/post?u=89c53c32c5e735943d83e3331&amp;id=f5016dc562" method="post" class="form-inline" target="_blank" novalidate>
-	
-				<input type="email" value="" name="EMAIL" class="form-control" placeholder="Email" required>
-    			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    			<div style="position: absolute; left: -5000px;"><input type="text" name="b_89c53c32c5e735943d83e3331_f5016dc562" value=""></div>
-				<input type="submit" value="Send Request" class="btn" id='requestBtn' onClick="_gaq.push(['_trackEvent', 'Request Info', 'Click', 'Mail Chimp']);">
-				</form>
-				
-
-				<!--End mc_embed_signup-->
-				</div>
-			</div>
-		</div><!-- /container -->
-	</div><!-- /w -->
-	
-	
+	</div>
 	
 	<!-- ========== PACKAGE SECTION ========== -->
 
@@ -343,26 +274,26 @@
 				  <div class="col-lg-6" id="firstFaq">
 
 				  	<h3>Is this real?</h3>
-				  	<p>Absolutely. We saw <a href="http://tynan.com/island" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Tynan Blog Post']);"><a href='http://tynan.com/island' target='_blank'>this blog post</a> about fractional ownership and decided to do it differently.  At first it may seem a little far fetched, but it makes a lot of sense and the more you learn about it the more you'll love it.</p>
+				  	<p>Absolutely. We saw <a href="http://tynan.com/island" onClick="_gaq.push(['_trackEvent', 'Body Links', 'Click', 'Tynan Blog Post']);"><a href='http://tynan.com/island' target='_blank'>this blog post</a> and decided to take it to the next level. At first it may seem a little far fetched, but it makes a lot of sense and the more you learn about it the more you'll love it.</p>
 
 				  	<h3>Are the packages above the only ones?</h3>
 				  	<p>We offer packages for nearly any interested group size. This includes multiple payment options and in-between packages. Send your questions to info@xoisland.com.</p>
 
 				  	<h3>When will the Island be ready to visit?</h3>
-				  	<p>XO Island is already developed with full amenities, it just needs to be purchased.  After we sell enough packages to purchase the island, we percieve it will take 3 months to get deed in hand and open the island up.</p>
+				  	<p>XO Island is already developed with full amenities, it just needs to be purchased.  After we recieve full funding, we percieve it will take 3 months to get dead in hand and open the island up for visitors.</p>
 				  	
 				  	
 				  </div> 
 
 				  <div class="col-lg-6" id="faq">
 				  	<h3>What Does <i>Unlimited Access</i> Imply?</h3>
-				  	<p>It means that if your package hasn't been reserved two weeks in advance you are free to reserve it for as long as you wish.  This comes with the annual membership fee of $90/person (which is discounted with group packages)</p>
+				  	<p>It means that if your package hasn't been reserved two weeks in advance you are free to reserve it for as long as you wish.  This comes with the annual membership fee of $30/person (which is discounted with group packages)</p>
 
 				  	<h3>Have you been to the Island?</h3>
 				  	<p>Not yet. We've spoken with the realtor and plan on going down in April. Want to come? John and Bryson speak Spanish fluently, and have visited every country in Central America and have a good feel for the culture.</p>
 
 				  	<h3>Why the yearly fee?</h3>
-				  	<p>The up-front cost is the one-time purchase price for the package.  We need annual payments for regular maintenance and care of the island.</p>
+				  	<p>The up-front cost is in putting a down payment on the island.  We need annual payments for paying off the mortgage, taxes, maintenance, gas, water, internet, etc...</p>
 				  	
 				  </div>
 
@@ -455,8 +386,7 @@
 					
 					<div class="col-lg-4">	
 						<h3><b>Call Us:</b></h3>
-						<h3>(844)-XO-ISLAND</h3>
-						<span>(844) 964-7526</span>
+						<h3>(844) 964-7526</h3>
 						<br>
 					</div>
 					
