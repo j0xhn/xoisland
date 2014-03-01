@@ -10,6 +10,8 @@
 /* My Custom Styles */
 
 /* info page header section */
+
+
 .padding-top {
 	padding-top:20%;
 }
@@ -36,6 +38,8 @@ margin-top: 191px;
 
 nav#infoNav a {
   color: black;
+  background-color: #66b5d7;
+
 }
 
 
