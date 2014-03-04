@@ -76,6 +76,17 @@
 	margin: 5px 5px 5px 5px;
 }
 
+/*Toggle Start*/
+.toggle {  }
+
+.toggle > p { display:none; margin-top:20px; }
+.toggle > h5 { cursor: pointer; position: relative; padding-left:43px; margin-top:10px; zoom: 1; line-height:30px; font-weight:400;  }
+.toggle > h5 > .arrow { position:absolute; left:0px; top:0px; width:31px; height:30px; }
+.toggle > h5 > .arrow > span { display:block; width:31px; height:30px; background:url('img/accordion.png') no-repeat center center; -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; -ms-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; }
+.toggle > h5:hover > .arrow > span { -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
+.toggle > h5.active > .arrow > span { background-image:url('img/accordion-active.png') }
+/*Toggle End*/
+
 
 body {
   background-color: #f2f2f2;
