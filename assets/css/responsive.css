@@ -19,7 +19,8 @@ Things to remember:
 	}
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 770px) {
+
 	.menu{
 		display: none;
 	}
@@ -55,6 +56,15 @@ Things to remember:
 	  text-align: center;
 	}
 
+	.headerwrap#info h2 {
+	font-size: 2em;
+	}
+
+	.headerwrap h2 {
+	color: rgb(103, 95, 95);
+	font-size: 2em;
+	}
+	
 }
 
 
@@ -64,4 +74,6 @@ Things to remember:
 		margin-top: 10px;
 		
 	}	
+
+
 }

@@ -27,6 +27,28 @@
 			$( "#toggleAnswer" ).click(function(e) {
 				e.preventDefault();
   			$( 'p' ).toggleClass( "toggleThis" );
-});
+			});
+
+			// Video Toggle
+			
+
+				var video = document.getElementById("videoElem");
+
+				$( '#videoButton' ).click(function() {
+				console.log('video button clicked');
+				    video.play();	            
+				});
+
+				$('#myModal').on('hidden.bs.modal', function () { 
+					console.log('Hide Video Activated');
+	 				video.pause();
+	 				video.currentTime = 0;
+	 			});
+
+			
+			
+
+			
+			
 
 })(jQuery)
