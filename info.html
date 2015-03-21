@@ -6,23 +6,7 @@
 	<html lang="en">
 
   <head>
-<!-- GOOGLE ANALYTICS -->
-	<script type = 'text/javascript'>
 
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-47790088-1']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-
-    ga('create', 'UA-47790088-1', 'xoisland.com');
-	  ga('send', 'pageview');
-
-  	})();
-	</script>
 <!-- META INFO -->
 	
     <meta charset="utf-8">
@@ -44,8 +28,6 @@
     <meta property="og:description" content="Make history and get your piece of the very first crowdfunded private island.  100% guaranteed this is the coolest thing you've seen on Facebook all week." />
 <!-- BOOTSTRAP/FONTAWESOME/LIGHTBOX CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-		<link href="assets/css/lightbox.css" rel="stylesheet" />
 <!-- CUSTOM CSS -->
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
@@ -59,7 +41,8 @@
     <![endif]-->
   </head>
 
-  <body data-spy="scroll" data-offset="0" data-target="#mobileNav">
+  <body data-spy="scroll" data-offset="0" data-target="#mobileNav" ng-app="xoisland" ng-controller="faqController as FAQ">
+
 
 <!-- MOBILE NAV -->
   	<nav class="menu" id="mobileNav">
@@ -129,160 +112,19 @@
 
 		<div class="navbar navbar-fixed-top margin-top blue" id="infoNav">
 			<div class="container">
-				<ul class="nav row">
-
-					<li class="col-sm-4">
-						<a data-toggle="dropdown">
-					     	<p>ISLAND DETAILS	<span class="caret"></span><p>
-					     
-					  </a>
-					  <ul class="dropdown-menu">
-				     	<li><a href="#why" class="smoothScroll">Why</a></li>
-				     	<li><a href="#where" class="smoothScroll">Where</a></li>
-				     	<li><a href="#transportation" class = "smoothScroll">transportation</a></li>
-				     	<li><a href="#weather" class = "smoothScroll">Weather</a></li>
-				     	<li><a href="#amenities" class = "smoothScroll">Amenities</a></li>
-				     	<li><a href="#foodwater" class = "smoothScroll">Food Water</a></li>
-				     	<li><a href="#caretakers" class = "smoothScroll">Caretakers</a></li>
-				     	<li><a href="#activities" class = "smoothScroll">Activities</a></li>
-				     	<li><a href="#rules" class = "smoothScroll">Rules</a></li>
-
-				   	</ul>
-					</li>
-
-					<li class="col-sm-4">
-					<a data-toggle="dropdown">
-					     	<p>OWNERSHIP <span class="caret"></span></p> 
-					   	</a>
-					   	<ul class="dropdown-menu">
-					     	<li><a href="#totalcosts" class = "smoothScroll">Total Costs</a></li>
-					     	<li><a href="#how-it-works" class = "smoothScroll">How it works</a></li>
-					     	<li><a href="#time-split" class = "smoothScroll">Time Split</a></li>
-					     	<li><a href="#the-packages" class = "smoothScroll">The Packages</a></li>
-					     	<li><a href="#unlimited-access" class = "smoothScroll">Unlimited Access</a></li>
-					     	<li><a href="#legal" class = "smoothScroll">Legal</a></li>
-					     	<li><a href="#dates" class = "smoothScroll">Dates</a></li>
-					     	<li><a href="#tenant-disputes" class = "smoothScroll">Tenant Disputes</a></li>
-					     	<li><a href="#refunds" class = "smoothScroll">Refunds</a></li>
-					   	</ul>
-					</li>
-
-					<li class="col-sm-4">
-					<a data-toggle="dropdown">
-					     	<p>PREPAREDNESS <span class="caret"></span></p>
-					   	</a>
-					   	<ul class="dropdown-menu">
-					     	<li><a href="#family-safety" class = "smoothScroll">Family Safety</a></li>
-					     	<li><a href="#medical-precautions" class = "smoothScroll">Medical Precautions</a></li>
-					     	<li><a href="#insurrance-hurricanes" class = "smoothScroll">Insurrance/ Hurricanes</a></li>
-					     	<li><a href="#worst-case-scenario" class = "smoothScroll">Worst Case Scenario</a></li>
-					     	<li><a href="#global-warming" class = "smoothScroll">Global Warming</a></li>
-					   	</ul>
-					</li>
-				</ul>
+				<input type="search" ng-model='searchText' placeholder="search here">
 			</div><!-- /.container -->
 		</div><!-- /.navbar -->
 
+		
+
 <!-- INFO PACKET SECTION -->
 <div class='container' id='infoPacket'>
-	<div id="collapsable">
-	<h1 id = "why"><a data-toggle='collapse' data-target='#why-details'>Why</a></h1>
-	<p class="collapse" id="why-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-	
-
-	<h1 id = "where"><a data-toggle='collapse' data-target='#where-details'>Where</a></h1>
-	<p class="collapse" id="where-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-	<h1 id = "transportation"><a data-toggle='collapse' data-target='#transportation-details'>Transportation</a></h1>
-	<p class="collapse" id="transportation-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-
-	<h1 id = "weather"><a data-toggle='collapse' data-target='#weather-details'>Weather</a></h1>
-	<p class="collapse" id="weather-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-	<h1 id = "amenities"><a data-toggle='collapse' data-target='#amenities-details'>Amenities</a></h1>
-	<p class="collapse" id="amenities-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-	<h1 id = "foodwater"><a data-toggle='collapse' data-target='#food-water-details'>Food & Water</a></h1>
-	<p class="collapse" id="food-water-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-
-	<h1 id = "caretakers"><a data-toggle='collapse' data-target='#caretakers-details'>Caretakers</a></h1>
-	<p class="collapse" id="caretakers-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-	<h1 id = "activities"><a data-toggle='collapse' data-target='#activities-details'>Activities</a></h1>
-	<p class="collapse" id="activities-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-	<h1 id = "rules"><a data-toggle='collapse' data-target='#rules-details'>Rules</a></h1>
-	<p class="collapse" id="rules-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-	<h1 id = "totalcosts"><a data-toggle='collapse' data-target='#total-costs-details'>Total Costs</a></h1>
-	<p class="collapse" id="total-costs-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-	<h1 id = "how-it-works"><a data-toggle='collapse' data-target='#how-it-works-details'>How It Works</a></h1>
-	<p class="collapse" id="how-it-works-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-	<h1 id = "time-split"><a data-toggle='collapse' data-target='#time-split-details'>Time Split</a></h1>
-	<p class="collapse" id="time-split-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-	<h1 id = "the-packages"><a data-toggle='collapse' data-target='#the-packages-details'>The Packages</a></h1>
-	<p class="collapse" id="the-packages-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-	<h1 id = "unlimited-access"><a data-toggle='collapse' data-target='#unlimited-access-details'>Unlimited Access</a></h1>
-	<p class="collapse" id="unlimited-access-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-	<h1 id = "legal"><a data-toggle='collapse' data-target='#legal-details'>Legal</a></h1>
-	<p class="collapse" id="legal-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-	<h1 id = "dates"><a data-toggle='collapse' data-target='#dates-details'>Dates</a></h1>
-	<p class="collapse" id="dates-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-	<h1 id = "tenant-disputes"><a data-toggle='collapse' data-target='#tenant-disputes-details'>Tenant Disputes</a></h1>
-	<p class="collapse" id="tenant-disputes-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-	<h1 id = "refunds"><a data-toggle='collapse' data-target='#refund-details'>Refund</a></h1>
-	<p class="collapse" id="refund-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-
-	<h1 id = "family-safety"><a data-toggle='collapse' data-target='#family-safety-details'>Family Safety</a></h1>
-	<p class="collapse" id="family-safety-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-
-	<h1 id = "medical-precautions"><a data-toggle='collapse' data-target='#medical-precautions-details'>Medical Precautions</a></h1>
-	<p class="collapse" id="medical-precautions-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-	<h1 id = "insurance-hurricanes"><a data-toggle='collapse' data-target='#insurance-hurricanes-details'>Insurance / Hurricanes</a></h1>
-	<p class="collapse" id="insurance-hurricane-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-	<h1 id = "worst-case-scenario"><a data-toggle='collapse' data-target='#worst-case-scenario-details'>Worst Case Scenario</a></h1>
-	<p class="collapse" id="worst-case-scenario-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-
-	<h1 id = "global-warming"><a data-toggle='collapse' data-target='#global-warming-details'>Global Warming</a></h1>
-	<p class="collapse" id="global-warming-details"> Answer is here.  Lorizzle ipsum dolor amizzle, consectetuer adipiscing elit. Nullizzle away velit, aliquet volutpizzle, suscipit black, bow wow wow vizzle, crazy. Pellentesque eget tortizzle. Sizzle get down get down. Away shizzlin dizzle dolizzle dapibus turpis tempizzle tempor. Maurizzle da bomb nibh et turpizzle. Vestibulum in tortizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle eleifend rhoncus fizzle. In dizzle habitasse platea dictumst. Mah nizzle dapibizzle. Curabitizzle tellus urna, pretizzle mah nizzle, mattizzle break yo neck, yall, eleifend own yo', nunc. Gangsta suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper own yo' sizzle daahng dawg.
-	</p>
-</div>
+	<p>{{FAQ.test}}</p>
+	<div ng-repeat="question in FAQ.questions | filter:searchText">
+		<h1>{{question.title}}</h1>
+		<p>{{question.content}}</p>
+	</div>
 </div>
 	
 <!-- ========== FOOTER SECTION ========== -->
@@ -325,6 +167,9 @@
 
     <!-- Bootstrap core JavaScript Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery-1.10.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script type="text/javascript" src="angular/app.js"></script>
+
 	<script src="assets/js/classie.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/smoothscroll.js"></script>
