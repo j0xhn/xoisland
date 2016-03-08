@@ -1,34 +1,88 @@
-/*
- * Author: Carlos Alvarez
- * URL: http://alvarez.is
+ /*
  *
- * Project Name: Onassis - Free Bootstrap 3 Theme
- * Version: 1.0
- * URL: http://blacktie.co
+ #NAV
+ *
  */
-
-/* My Custom Styles */
-
-/* info page header section */
-
-#infoPacket{
-  padding-top: 200px;
-}
-
-.padding-top {
-	padding-top:20%;
-}
-
 .fixed-top {
 	position: fixed;
 	overflow-y: scroll;
 	z-index: 4;
   overflow: auto;
 }
-
-.margin-top {
-margin-top: 130px;
+/*
+*
+#ELEMENTS
+*
+*/
+#infoPacket{
+  padding-top: 200px;
 }
+/*
+*
+#PACKAGES
+*
+*/
+.packages{ max-width: 800px; margin: 0 auto;}
+.package{
+  max-width: 400px;
+  margin: 0 auto;
+}
+/*
+*
+#FAQ
+*
+*/
+#faq h3 {
+	font-weight: 700;
+}
+/*
+*
+#TEAM
+*
+*/
+.team {
+	padding-top: 20px;
+}
+
+.team:hover {
+	background: white;
+}
+
+.team a {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+
+@media (min-width: 650px) {
+    .images#topSpace iframe{
+      margin: 5px 5px -95px 5px;
+    }
+
+
+}
+
+@media (min-width: 800px) {
+    .headerwrap h1 {
+		margin-top: 90px;
+    }
+
+    .packages .package{
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .headerwrap h1 {
+		margin-top: 90px;
+    }
+    .packages { max-width: 1200px;}
+    .packages .package{
+        width: 25%;
+    }
+}
+
 
 
 /* ========End Here ==== */
@@ -135,18 +189,6 @@ margin-top: 130px;
 	margin: 5px 5px 5px 5px;
 }
 
-@media (min-width: 650px) {
-    .images iframe{
-      margin: 5px 5px -95px 5px;
-    }
-}
-
-@media (min-width: 800px) {
-    .headerwrap h1 {
-		margin-top: 90px;
-    }
-}
-
 
 
 body {
@@ -221,7 +263,7 @@ a:after {
    ========================================================================== */
 
 .headerwrap {
-	
+
 	background: url(../img/header-bg.jpg);
 	margin-top: -10px;
 	padding-top:20px;
@@ -230,7 +272,7 @@ a:after {
 	background-position: center;
 	min-height: 700px;
 	width: 100%;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -268,7 +310,7 @@ a:after {
 }
 
 .headerwrap h2 {
-	
+
 	color: rgb(103, 95, 95);
 	font-size: 1.2em;
 	font-weight: 100;
@@ -303,7 +345,7 @@ a:after {
 	font-weight: 700;
 	letter-spacing: 3px;
 	text-shadow: none;
-	
+
 	}
 
 	.headerwrap h2 {
@@ -311,7 +353,7 @@ a:after {
   font-weight: 100;
   letter-spacing: 2px;
   text-shadow: none;
-	
+
 	}
 
   	#videoButton {
@@ -333,7 +375,7 @@ a:after {
 	background-position: center center;
 	min-height: 500px;
 	width: 100%;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -398,7 +440,7 @@ a:after {
 	padding-top: 35px;
 	padding-bottom: 60px;
 	text-align: center;
-	
+
 }
 
 #bl h3 {
@@ -416,7 +458,7 @@ a:after {
 }
 
 #f h3 {
-	color: white;	
+	color: white;
 }
 
 #f i {
@@ -450,7 +492,7 @@ a:after {
 	background-position: center center;
 	min-height: 500px;
 	width: 100%;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -565,7 +607,7 @@ a:after {
 .menu a > i {
 	float: left;
 	display: inline-block;
-	vertical-align: middle; 
+	vertical-align: middle;
 	text-align: left;
 	width: 25px;
 	font-size: 14px;
@@ -673,20 +715,5 @@ a:after {
 	cursor: pointer;
 	color: white;
 	background-color: #16a085;
-	
-}
 
-/* TEAM CONF */
-
-.team {
-	padding-top: 20px;
-}
-
-.team:hover {
-	background: white;
-}
-
-.team a {
-	padding-right: 10px;
-	padding-left: 10px;
 }
